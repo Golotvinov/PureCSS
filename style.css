@@ -2,6 +2,10 @@
     box-sizing: border-box;
 }
 
+html {
+    scroll-behavior: smooth;
+  }
+
 a {
     text-decoration: none;
 }
@@ -43,6 +47,10 @@ header {
     border-bottom: 1px solid rgb(206, 206, 206);
     padding: 20px 0;
     margin: 0 auto;
+    position: sticky;
+    top: 0%;
+    z-index: 2;
+    background-color: #FFF;
 }
 
 .nav {
@@ -158,6 +166,33 @@ h3 > span {
     margin: 0;
     padding: 10px 0 0 47px;
     line-height: 1.8;
+}
+
+/* Sekce: Portfolio */
+
+h2.portfolio {
+    margin-top: -10px;
+}
+
+.portfolio-card-group {
+    max-width: 1300px;
+    margin: 0 auto;
+}
+
+.portfolio-card {
+    width: 400px;
+    margin: 0 auto 30px;
+    background-color: #FFF;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+}
+
+.portfolio-img {
+    width: 100%;
+    height: 250px;
+}
+
+.portfolio-card-description {
+    text-align: center;
 }
 
 @media screen and (max-width: 1350px) {
