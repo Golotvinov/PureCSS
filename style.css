@@ -195,6 +195,55 @@ h2.portfolio {
     text-align: center;
 }
 
+/* Sekce: Reference */
+
+.reference-card-section {
+    justify-content: space-between;
+    max-width: 1300px;
+    margin: 0 auto;
+}
+
+
+.reference-card {
+    background-color: lightblue;
+}
+
+.reference-card:first-of-type {
+    background-color: lightcoral;
+}
+
+.refrence-card:first-of-type {
+    margin-right: 50px;
+}
+
+/* Sekce: Kontakty */
+
+.pure-form {
+    max-width: 1300px;
+    margin: 0 auto;
+    padding: 0 30px;
+}
+
+/* FOOTER */
+
+footer {
+    bottom: 0%;
+    align-items: center;
+    background-color: rgb(22, 22, 22);
+    padding: 30px;
+}
+
+.footer-logo-text {
+    color: #FFF;
+}
+
+.footer-text {
+    display: flex;
+    justify-content: space-between;
+    color: #FFF;
+    margin: 0;
+}
+
 @media screen and (max-width: 1350px) {
     header {
         margin: 0 5%;
@@ -202,7 +251,6 @@ h2.portfolio {
 }
 
 @media screen and (max-width: 1023px) {
-
     .nav {
         justify-content: center;
         padding-top: 30px;
@@ -211,3 +259,7 @@ h2.portfolio {
         justify-content: center;
     }
   }
+
+  @media screen and (max-width: 767px) {
+  
+}
