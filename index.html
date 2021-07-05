@@ -182,8 +182,18 @@
                         <textarea name="zprava" id="zprava" class="pure-input-1"></textarea>
                     </div>
                 </div>
-                <button type="submit" class="pure-button pure-button-primary">Odeslat formulář</button>
+                <a data-modal="modal-one" class="modal-btn"><button type="submit" class="pure-button pure-button-primary">Odeslat formulář</button></a>
             </fieldset>
+
+            <div class="modal" id="modal-one">
+                <div class="modal-bg modal-exit"></div>
+                <div class="modal-container">
+                    <h1>Zpráva z odesílacího formuláře</h1>
+                    <h2>Zprávu se podařilo úspěšně odeslat! Můžete nyní toto okno zavřít.</h2>
+                    <button data-modal="modal-one" class="modal-close modal-exit">X</button>
+                </div>
+            </div>
+
         </form>
     </section>
 
@@ -195,7 +205,7 @@
             Fiktivní společnost s.r.o., verze s frameworkem PureCSS.
         </p>
     </footer>
-
+    <script src="modal.js"></script>
 </body>
 
 </html>
