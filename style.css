@@ -121,7 +121,11 @@ h3 > span {
 }
 
 .hero-buttons {
-    text-align: center;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    align-content: stretch;
 }
 
 .pure-button-primary {
@@ -201,19 +205,35 @@ h2.portfolio {
     justify-content: space-between;
     max-width: 1300px;
     margin: 0 auto;
+    padding: 30px;
 }
-
 
 .reference-card {
-    background-color: lightblue;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+    transition: all 500ms;
 }
 
-.reference-card:first-of-type {
-    background-color: lightcoral;
+.reference-card:hover{
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 10px 36px 0px, rgba(0, 0, 0, 0.06) 0px 0px 0px 1px;
 }
 
 .refrence-card:first-of-type {
     margin-right: 50px;
+}
+
+.reference-card-text {
+    text-align: center;
+    font-size: 1.5em;
+    margin-bottom: 0;
+}
+
+.reference-card-autor {
+    margin-top: 7px;
+    color: rgb(151, 151, 151);
 }
 
 /* Sekce: Kontakty */
@@ -224,6 +244,22 @@ h2.portfolio {
     padding: 0 30px;
 }
 
+label {
+    padding: 10px 0;
+}
+
+.form-zprava {
+    margin-bottom: 15px;
+}
+
+fieldset {
+    padding: 0;
+}
+
+fieldset > button {
+    float: right;
+}
+
 /* FOOTER */
 
 footer {
@@ -231,6 +267,7 @@ footer {
     align-items: center;
     background-color: rgb(22, 22, 22);
     padding: 30px;
+    margin-top: 30px;
 }
 
 .footer-logo-text {
@@ -239,7 +276,7 @@ footer {
 
 .footer-text {
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     color: #FFF;
     margin: 0;
 }
@@ -258,8 +295,17 @@ footer {
     .logo-section {
         justify-content: center;
     }
-  }
+    .hero-buttons {
+        flex-direction: column;
+    }
+    .pure-button-primary {
+        margin-bottom: 15px;
+    }
+    .footer-text {
+        margin-top: 15px;
+    }
 
-  @media screen and (max-width: 767px) {
-  
-}
+    .reference-card:first-of-type {
+        margin-bottom: 30px;
+    }
+  }
